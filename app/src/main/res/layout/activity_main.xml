@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#323232"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#313032"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/allan_bold"
+                    android:text="@string/limpid"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/Url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search"
+                android:ems="10"
+                android:fontFamily="@font/advent_pro_bold"
+                android:hint="Enter the url here"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#252525"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top"
+                android:onClick="go"
+                android:text="go"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/top_white"
+                android:fontFamily="sans-serif-thin"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/satelite"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/flightradar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="flightradar"
+                android:text="@string/flightradar"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/windy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="windy"
+                android:text="@string/windy"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/worldmeter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="worldmeter"
+                android:text="@string/world_meter"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/mohfw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="mohfw"
+                android:text="@string/mohfw"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/maps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/top"
+                android:onClick="maps"
+                android:text="@string/google_maps"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/top_white"
+                android:fontFamily="sans-serif-thin"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/shopping"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/amazon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="amazon"
+                android:text="@string/amazon"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/flipkart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="flipkart"
+                android:text="@string/flipkart"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/olx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="olx"
+                android:text="@string/olx"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/snapdeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/top"
+                android:onClick="snapdeal"
+                android:text="@string/snapdeal"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/top_white"
+                android:fontFamily="sans-serif-thin"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/social_network"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/instagram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="instagram"
+                android:text="@string/instagram"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="facebook"
+                android:text="@string/facebook"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/gmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/top"
+                android:onClick="gmail"
+                android:text="@string/gmail"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/button15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/top_white"
+                android:fontFamily="sans-serif-thin"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/search_engine"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="google"
+                android:text="@string/google"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/duckduckgo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="duckduckgo"
+                android:text="@string/duckduckgo"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/bing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/top"
+                android:onClick="bing"
+                android:text="@string/bing"
+                android:textColor="#FFFFFF" />
+
+
+            <TextView
+                android:id="@+id/news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/top_white"
+                android:fontFamily="sans-serif-thin"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/news"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/Google_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="googleNews"
+                android:text="@string/google_news"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/timesnow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="timesNow"
+                android:text="@string/times_now"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/indian_express"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="indianExpress"
+                android:text="@string/indian_express"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/sunNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/top"
+                android:onClick="sunNews"
+                android:text="@string/sun_news_live"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/guides"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/top_white"
+                android:fontFamily="sans-serif-thin"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/developer_space"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/Android_Java"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="kOTLIN"
+                android:text="@string/kotlin"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/devDocs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="aDocs"
+                android:text="@string/android_docs"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/github"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="github"
+                android:text="@string/github"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/firebase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="firebase"
+                android:text="@string/firebase"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/NASA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="nasa"
+                android:text="@string/nasa"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/pypi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/top"
+                android:onClick="pypi"
+                android:text="@string/python_package_index"
+                android:textColor="#FFFFFF" />
+            <!--OTHERS PART-->
+            <TextView
+                android:id="@+id/hacking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/top_white"
+                android:fontFamily="sans-serif-thin"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/others"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/shodan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="shodan"
+                android:text="@string/shodan"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/cyber_security_hub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="cshub"
+                android:text="@string/cyber_security_hub"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/youtube"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="yt"
+                android:text="@string/youtube"
+                android:textColor="#FFFFFF" />
+
+
+            <Button
+                android:id="@+id/wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#222222"
+                android:onClick="wifi"
+                android:text="@string/wifi_configuration"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/Localhost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/top"
+                android:onClick="localhost"
+                android:text="@string/string_local_host"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/created_by_manoj_paramsetti"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
